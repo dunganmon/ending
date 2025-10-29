@@ -1,0 +1,219 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EFEEF3;
+    text-align: center;
+}
+header nav {
+    background-color: #000000;
+    
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 300px;
+    gap: 20px;
+    padding: 13px 0;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    border-right: 2px solid white;
+    padding: 0 10px;
+}
+header nav ul li:last-child a {
+    border-right: none;
+}
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.img-header {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.img-header img {
+    width: 100%;
+    display: block;
+}
+
+.logo-header {
+    background-color: white;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+
+.login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px auto;
+    width: 100%;
+}
+
+
+
+
+
+form {
+    text-align: left;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+    background-color: #fff;
+}
+
+
+
+#email, #password {
+  width: 100%;
+}
+
+#email, #password {
+  display: inline-block;
+  width: 49%;
+}
+
+#email {
+  margin-right: 1%;
+}
+
+
+.row {
+  display: flex;
+  gap: 15px;
+}
+
+.row div {
+  flex: 1;
+}
+
+
+button {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 6px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0b5ed7;
+}
+
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    margin-top: 40px;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #0d6efd;
+}
+
+@media (max-width: 992px) {
+  header nav ul {
+    justify-content: center;
+    margin-right: 0;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .img-header, .logo-header {
+    width: 90%;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  #email, #password {
+    width: 100%;
+    display: block;
+  }
+
+  .row {
+    flex-wrap: wrap;
+  }
+
+  .row div {
+    flex: 1 1 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    font-size: 15px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-header, .logo-header {
+    width: 100%;
+  }
+
+  form {
+    width: 95%;
+  }
+
+  #email, #password {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .checkbox {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  button {
+    width: 100%;
+    font-size: 15px;
+    padding: 12px;
+  }
+}
